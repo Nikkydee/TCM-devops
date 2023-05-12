@@ -1,0 +1,89 @@
+GIT
+
+ Historically, Sharepoint is one of the popularly known version control system but it was not efficient as a result of the enlisted problems
+
+ * Problem of collaboration across teams
+ * Problem of managing versions
+ * Difficulty in restoring to the previous versions
+ * Challenges of source code backup
+ A new version control system evolved known as GIT which ease management of file. Hence, a specific filefile version can be called if needed
+  Git is a free and open source code  distributed version control system designed
+ to manage  team work and collaboration on a small or  large projects.GIT is an example of a distributed
+ version control system. It tracks all modification to a source code repository incuding files, texts, folders, codebase history, code conflicts and code commit history.
+ In addition to this, GIT is more reliable and more secured. Some examples of Version control systems are Github, Gitlab,Benstalk, Apachesubversion, Mecurial,
+bitbucket,Team Foundation Server e.t.c.
+
+In order to use git, an account should be created on one of these version control system like Github,
+configure a  git username and password.After which the user navigates to a github account to create a repository to manage the source code
+Some git commands are globally recognised for effective management of source code repository
+1. git clone:  This is a command to retrieve the remote repository to one's local machine.This is done by getting the hosted location through URL 
+the repo name and copying the git url
+$ git clone <url>
+
+2.git add: It is used to stage all changes that may have occured on the local repository
+  $git add <specific filename. extension>
+  $git add . : This add all the changes made on the file or source code
+
+3. git commit: This saves all changes made on the codebase to the local repository.
+   $git commit -m "<commit message> . A commit message contains the following git commit ID, Who commited and timestamp, git commit message
+   and snapshot(captures the state of the file)
+
+4.git branch:This is used to create a new branch off the master or main branch
+  $git branch <"branchname>
+
+5. git checkout: It is a git command to switch  to another branch and check it out into your working directory
+   $git checkout <branchname>
+6. git status: This is to show modified files in working directory, staged for your next commit
+    $git status
+7. git config : It is used to set a name that is identifiable when reviewing  version history
+    $git config --global user.name “[firstname lastname]”
+    $git config --global user.email “[valid-email]”
+8. git push: To Transmit local branch commits to the remote repository branch
+   $ git push -u origin <branchnme>. This notifies the system to always push upstream to origin
+9. git pull: To fetch and merge any commits from the tracking remote branch
+   $git pull
+10.git merge [branch]:To merge the specified branch’s history into the current one
+    $git merge [branch]
+
+11. git init : To  initialize an existing directory as a Git repository
+    $git init
+12. git remote: To check the version of remote
+   $ git remote -v
+13. git rm : To delete the file from project and stage the removal for commit
+   $git rm <file>
+14. git ignore: It is used to unstage a particular file or source code while committing changes
+
+15. git log: To show the commit history for the currently active branch
+
+16.git fetch: To fetch down all the branches from that Git remote
+
+17. git log: It shows the commit history for the currently active branch
+
+18. git diff:  To show the diff of what is in branchA that is not in branchB
+  $git diff branchB...branchA
+
+19.git revert: It used to undo changes to a particular commit id
+   $git revert <commitid>
+20. git switch:  This is used when you intend  to keep your changes and continue from here, you can use the command  to create a new branch from this point.
+   $git switch -c <new-branch-name>
+
+
+
+    
+   GIT branching 
+   Branch is a named commit. Each branch possess an head. An head is where your your working directory is pointing . Several commits are 
+   created by a developer and new features are created in a separate file once implementation is completed, the developer created a pull request.
+   After code review is complete, git merge is initiated by the reviewer. 
+   Moreover, a hotfix branch can be created off development branch to resolve issues and code merged back to master after successful pull request is approved.
+   A branching Startegy Model is very crucial to prevent merge conflicts in source code management.
+
+   Long live branches: These are branches that exist from the beginning of the project to your current project. Examples are dev, QA,UAT, Prod, Determination
+
+   Short Lived branch: The exist for the duration of the sprint cycle,mostly 10 days. An example is a feature branch to improve an exist feature or create a new feature
+
+   MERGE CONFLICTS: This occur as result of multiple individuals modifying the same file. This sets the git into state of confusion on which line of code will be merged.
+   A manual intervention is required to resolve merge conflict..
+ 
+
+
+ 
